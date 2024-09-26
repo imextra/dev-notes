@@ -1,2 +1,2 @@
-# dev-notes
+# Dev-notes
 Some notes and instuctions
