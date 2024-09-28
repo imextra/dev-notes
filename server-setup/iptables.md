@@ -2,8 +2,7 @@
 
 Update & upgrade Ubuntu Repo's
 
-    sudo apt update -y
-    sudo apt upgrade -y
+    sudo apt update && apt upgrade -y
 
 Install iptables
 

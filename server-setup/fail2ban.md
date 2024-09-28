@@ -1,5 +1,9 @@
 # Settings for fail2ban in SSH
 
+Update & upgrade Ubuntu Repo's
+
+    sudo apt update && apt upgrade -y
+
 Install, activate and check status
 
     sudo apt install -y fail2ban python3-systemd
