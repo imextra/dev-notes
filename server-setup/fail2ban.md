@@ -2,7 +2,7 @@
 
 Update & upgrade Ubuntu Repo's
 
-    sudo apt update && apt upgrade -y
+    sudo apt update && sudo apt upgrade -y
 
 Install, activate and check status
 

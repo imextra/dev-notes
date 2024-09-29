@@ -6,7 +6,7 @@ Connect to server via ssh
 
 Update & upgrade Ubuntu Repo's
 
-    sudo apt update && apt upgrade -y
+    sudo apt update && sudo apt upgrade -y
 
 Create new user on the server
 

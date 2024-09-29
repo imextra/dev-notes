@@ -6,7 +6,7 @@ The latest Nginx package is available in the default APT repositories on Ubuntu 
 
 Update & upgrade Ubuntu Repo's
 
-    sudo apt update && apt upgrade -y
+    sudo apt update && sudo apt upgrade -y
 
 Install Nginx
 
@@ -79,6 +79,7 @@ ssl_prefer_server_ciphers  on;
 ```bash
 proxy_http_version  1.1;
 proxy_cache_bypass  $http_upgrade;
+proxy_set_header Host $host;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header X-Forwarded-Host  $host;
@@ -91,11 +92,15 @@ Add new host's configurations:
 `/etc/nginx/sites-available/site1.com`
 
 ```bash
+
+log_format custom_log_format '[$time_local]\nRequest: $request\nStatus: $status\nRequest_URI: $request_uri\nHost: $host\nClient_IP: $remote_addr\nProxy_IP(s): $proxy_add_x_forwarded_for\nProxy_Hostname: $proxy_host\nReal_IP: $http_x_real_ip\nUser_Client: $http_user_agent"\n';
+
 server {
     server_name site1.com;
     listen       443 ssl;
     listen [::]:443 ssl;
     include /etc/nginx/extra-include-conf/ssl.conf;
+    access_log /var/log/nginx/your-custom-log-file-name.log custom_log_format;
     location / {
         proxy_pass https://internal-ip;
         include /etc/nginx/extra-include-conf/proxy.conf;
@@ -161,6 +166,13 @@ View the Nginx service status and verify that it's running.
 `proxy_cache_bypass` — Задает условия, при которых nginx не станет брать ответ из кэша, а сразу перенаправит запрос на бэкенд. Если хотя бы один из параметров не пустой и не равен “0”. Подробнее почитайте вот [тут](https://habr.com/ru/articles/428127/)
 
 В итоге у нас получается достаточно гибкая конфигурация прокси сервера которую легко администрировать. 
+
+
+## Additional Settings
+
+### Set default time zone
+
+By default, nginx outputs the directory index in UTC time. If you want it to display the time in your local timezone, you should set the autoindex_localtime directive to on (`autoindex_localtime on;`) in `/etc/nginx.conf` in `http {}` section.
 
 
 ## More info
