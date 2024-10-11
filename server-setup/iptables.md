@@ -105,3 +105,5 @@ Another way
 [[Youtube] Защита SSH-сервера — порты, ключи, port knocking, iptables](https://www.youtube.com/watch?v=5TCvRlD1sSw&t=1376s)
 
 [[Youtube] Продвинутая защита ssh с помощью iptables. Ограничение кол-ва подключений в минуту, час, день...](https://www.youtube.com/watch?v=zqMYJaz6elM)
+
+[Iptables для новичков](https://docs.vscale.io/blog/iptables-for-beginners/)
