@@ -75,3 +75,14 @@ sudo apt-get install rabbitmq-server -y --fix-missing
 [Installing on Debian and Ubuntu](https://www.rabbitmq.com/docs/install-debian#apt-quick-start-cloudsmith)
 
 [Timeweb.cloud: Установка, настройка и использование RabbitMQ](https://www.rabbitmq.com/docs/install-debian#apt-quick-start-cloudsmith)
+
+
+### Цикл статей:
+
+[RabbitMQ. Часть 1. Introduction. Erlang, AMQP и RPC](https://habr.com/ru/post/488654/)
+
+[RabbitMQ. Часть 2. Разбираемся с Exchanges](https://habr.com/ru/post/489086/)
+
+[RabbitMQ. Часть 3. Разбираемся с Queues и Bindings](https://habr.com/ru/post/490960/)
+
+
