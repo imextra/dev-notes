@@ -66,7 +66,7 @@ Create directory `extra-include-conf` with includes:
 
 ```bash
 ssl_certificate      /path-to-certificate/file.crt;
-ssl_certificate_key  /path-to-certificate-key/file..key;
+ssl_certificate_key  /path-to-certificate-key/file.key;
 ssl_session_cache    shared:SSL:1m;
 ssl_session_timeout  5m;
 ssl_protocols        TLSV1.1 TLSV1.2 TLSV1.3;
