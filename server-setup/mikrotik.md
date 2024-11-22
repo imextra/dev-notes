@@ -14,6 +14,10 @@
 
 [Youtube: Плейлист: Основы Microtik ](https://www.youtube.com/watch?v=gVvLce3I8vA)
 
+[Для чего хакерам Микротик и как я спрятал 100 тыс. RouterOS от ботнета](https://habr.com/ru/articles/424433/)
+
+[Уязвимость Mikrotik позволяет получать список всех пользователей через winbox](https://habr.com/ru/articles/359038/)
+
 []()
 []()
 []()
