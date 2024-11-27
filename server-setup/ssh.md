@@ -80,11 +80,11 @@ Save config-file and restart ssh
 
 ```
 # on ubuntu 20.04 or 22.04
-systemctl restart ssh
+sudo systemctl restart ssh
 
 # or on ubuntu 24.04
-systemctl daemon-reload
-systemctl restart ssh.socket
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.socket
 ```
 
 Make a new connection on a NEW TERMINAL! If something goes wrong, you have previous terminal window.
@@ -108,11 +108,11 @@ Save config-file and restart ssh
 
 ```
 # on ubuntu 20.04 or 22.04
-systemctl restart ssh
+sudo systemctl restart ssh
 
 # or on ubuntu 24.04
-systemctl daemon-reload
-systemctl restart ssh.socket
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.socket
 ```
 
 
