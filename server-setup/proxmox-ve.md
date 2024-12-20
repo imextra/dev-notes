@@ -4,6 +4,7 @@
 
 ## Create VM settings
 
+Click button "Create VM"
 
 
 ## First steps iun new VM
