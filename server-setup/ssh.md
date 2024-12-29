@@ -1,8 +1,14 @@
 # SSH
 
+Install and Start SSH on Ubuntu
+
     sudo apt update && sudo apt upgrade -y
 
     sudo apt install openssh-client openssh-server -y
+
+    sudo systemctl start ssh
+
+    sudo systemctl enable ssh
 
 
 ## SSH-KEY: Create ssh-key and make ssh-key connection to remote server
