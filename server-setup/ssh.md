@@ -1,5 +1,10 @@
 # SSH
 
+    sudo apt update && sudo apt upgrade -y
+
+    sudo apt install openssh-client openssh-server -y
+
+
 ## SSH-KEY: Create ssh-key and make ssh-key connection to remote server
 
 ### 1. Create the key with `ed25519` encription (it's better than `rsa`)
@@ -47,12 +52,12 @@ Examples:
 Host my-server-name
   HostName 192.168.1.1
   Port 22
-  StrictHostKeyChecking no
   User remote-username
-  ForwardAgent yes
   IdentityFile /Users/username/.ssh/ssh_keys/my-key-name
-  IdentitiesOnly yes
   UserKnownHostsFile ~/.ssh/known_hosts
+  StrictHostKeyChecking no
+  ForwardAgent yes
+  IdentitiesOnly yes
   UseKeychain yes
   AddKeysToAgent yes
   ServerAliveInterval 60
